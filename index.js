@@ -2,6 +2,12 @@ const savebutton=document.getElementById("savebuttonn");
 const inputtittle=document.getElementById("inputtittle");
 const textarea=document.getElementById("textarea");
 const color1=document.getElementById("col1");
+const color2=document.getElementById("col2");
+const color3=document.getElementById("col3");
+const color4=document.getElementById("col4");
+const color5=document.getElementById("col5");
+const colorr=document.getElementsByClassName("colorr");
+
 
 
 savebutton.addEventListener("click",()=>{
@@ -9,42 +15,23 @@ savebutton.addEventListener("click",()=>{
 
 });
 
-col1.addEventListener("click",()=>{
-    col1.querySelector("span").style.display="inline";
-    col2.querySelector("span").style.display="none";
-    col3.querySelector("span").style.display="none";
-    col4.querySelector("span").style.display="none";
-    col5.querySelector("span").style.display="none";
-});
 
-col2.addEventListener("click",()=>{
-    col1.querySelector("span").style.display="none";
-    col2.querySelector("span").style.display="inline";
-    col3.querySelector("span").style.display="none";
-    col4.querySelector("span").style.display="none";
-    col5.querySelector("span").style.display="none";
-});
 
-col3.addEventListener("click",()=>{
-    col1.querySelector("span").style.display="none";
-    col2.querySelector("span").style.display="none";
-    col3.querySelector("span").style.display="inline";
-    col4.querySelector("span").style.display="none";
-    col5.querySelector("span").style.display="none";
-});
+const tick = (i) =>{
+    for(let i=0;i<colorr.length;i++){
+        colorr[i].querySelector("span").style.display="none";
+    }
+    colorr[i].querySelector("span").style.display="inline";
+}
+color1.addEventListener("click",()=>{tick(0)});
+color2.addEventListener("click",()=>{tick(1)});
+color3.addEventListener("click",()=>{tick(2)});
+color4.addEventListener("click",()=>{tick(3)});
+color5.addEventListener("click",()=>{tick(4)});
 
-col4.addEventListener("click",()=>{
-    col1.querySelector("span").style.display="none";
-    col2.querySelector("span").style.display="none";
-    col3.querySelector("span").style.display="none";
-    col4.querySelector("span").style.display="inline";
-    col5.querySelector("span").style.display="none";
-});
 
-col5.addEventListener("click",()=>{
-    col1.querySelector("span").style.display="none";
-    col2.querySelector("span").style.display="none";
-    col3.querySelector("span").style.display="none";
-    col4.querySelector("span").style.display="none";
-    col5.querySelector("span").style.display="inline";
-});
+
+
+
+
+
