@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #ede7f6;;
+}
+
+.firstdiv>h2>span{
+    color:rgb(126, 87, 194);
+}
+
+.firstdiv>h2{
+  
+    font-weight: bold;
+    margin: 0.83em 0;
+    
+}
+
+.firstdiv>input{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid rgb(126, 87, 194);
+    outline-color: rgb(81, 45, 168);
+    border-radius: 7px;
+    
+ 
+}
+
+.firstdiv>textarea{
+    width: 30%;
+    padding: 10px;
+    margin-top: 25px;
+    border: 1px solid rgb(126, 87, 194);
+    outline-color: rgb(81, 45, 168);
+    border-radius: 7px;
+
+}
+
+.firstdiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.colorsandbutton{
+    display: flex;
+    width: 30%;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+.colors{
+   
+   
+    text-align: left;
+    display: flex;
+}
+
+.colorsandbutton>button{
+   
+    padding: 10px 15px;
+    background-color: rgb(126, 87, 194);
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s ease 0s;
+}
+
+.colorsandbutton>button:hover{   
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    opacity: 0.9;
+}
+
+.colors>.color1{
+    background-color: rgb(240, 98, 146);
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0s;
+    display: flex;
+    align-items: center;
+
+}
+
+.colors>.color2{
+    background-color: rgb(186, 104, 200);
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0s;
+    display: flex;
+    align-items: center;
+
+}
+
+.colors>.color3{
+    background-color: rgb(79, 195, 247);
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0s;
+    display: flex;
+     align-items: center;
+}
+.colors>.color4{
+    background-color: rgb(255, 213, 79);
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0s;
+    display: flex;
+     align-items: center;
+}
+.colors>.color5{
+    background-color: rgb(174, 213, 129);
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0s;
+    display: flex;
+     align-items: center;
+}
+
+.colors>div:nth-child(1)>span{
+    font-size: 18px;
+    display: none;
+    
+}
+.colors>div:nth-child(2)>span{
+    font-size: 18px;
+    display: none;
+    
+}
+.colors>div:nth-child(3)>span{
+    font-size: 18px;
+    display: none;
+    
+}
+.colors>div:nth-child(4)>span{
+    font-size: 18px;
+    display: none;
+    
+}
+.colors>div:nth-child(5)>span{
+    font-size: 18px;
+    display: none;
+    
+}
+
+.colors>div{
+   justify-content: center;
+}
+
+.colorr:hover{
+    transform: translateY(-1px);
+    opacity: 0.7;
+}
+
+.search{
+    position: relative;
+    width: 32%;
+    margin: 20px auto 5px;
+}
+
+.search>input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(126, 87, 194);
+    outline-color: rgb(81, 45, 168);
+    border-radius: 7px;
+}
