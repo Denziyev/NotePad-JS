@@ -6,7 +6,9 @@
 
 body{
     font-family: 'Roboto Mono', monospace;
-    background-color: #ede7f6;;
+    background-color: #ede7f6;
+    padding-right: 10px;
+    padding-left: 150px;
 }
 
 .firstdiv>h2>span{
@@ -139,27 +141,27 @@ body{
      align-items: center;
 }
 
-.colors>div:nth-child(1)>span{
+.color1>span{
     font-size: 18px;
     display: none;
     
 }
-.colors>div:nth-child(2)>span{
+.color2>span{
     font-size: 18px;
     display: none;
     
 }
-.colors>div:nth-child(3)>span{
+.color3>span{
     font-size: 18px;
     display: none;
     
 }
-.colors>div:nth-child(4)>span{
+.color4>span{
     font-size: 18px;
     display: none;
     
 }
-.colors>div:nth-child(5)>span{
+.color5>span{
     font-size: 18px;
     display: none;
     
@@ -186,4 +188,9 @@ body{
     border: 1px solid rgb(126, 87, 194);
     outline-color: rgb(81, 45, 168);
     border-radius: 7px;
+}
+
+
+#notearea{
+    justify-content: center;
 }
