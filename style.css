@@ -7,8 +7,13 @@
 body{
     font-family: 'Roboto Mono', monospace;
     background-color: #ede7f6;
-    padding-right: 10px;
-    padding-left: 150px;
+    /* padding-right: 100px;
+    padding-left: 100px; */
+}
+.firstdiv{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
 }
 
 .firstdiv>h2>span{
@@ -59,13 +64,12 @@ body{
 .colors{
    
    
-    text-align: left;
     display: flex;
 }
 
 .colorsandbutton>button{
-   
-    padding: 10px 15px;
+   width: 17%;
+    /* padding: 10px 15px; */
     background-color: rgb(126, 87, 194);
     border-radius: 10px;
     border: 1px;
@@ -192,5 +196,49 @@ body{
 
 
 #notearea{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+@media screen and (max-width:1063px) {
+    .firstdiv>input{
+        width: 60%;
+    }
+    .firstdiv>textarea{
+        width: 60%;
+    }
+    .colorsandbutton{
+        width: 60%;
+    }
+    .search{
+        width: 60%;
+    }
+}
+@media screen and (max-width:638px) {
+    .firstdiv>input{
+        width: 90%;
+    }
+    .firstdiv>textarea{
+        width: 90%;
+    }
+    .colorsandbutton{
+        width: 90%;
+    }
+    .search{
+        width: 90%;
+    }
+}
+@media screen and (max-width:405px) {
+  .colorr{
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .colorsandbutton>button{
+    width: 23% !important;
+  }
+  .Cards{
+    height: 280px !important;
+  }
 }
